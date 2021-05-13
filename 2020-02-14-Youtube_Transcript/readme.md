@@ -1,4 +1,6 @@
 # Get Youtube Transcript using Selenium in Python
+## Update
+* Only works in `headed` mode at the moment.
 
 ## Getting started
 1. Install requirements using `pip` (see `requirements.txt`). Download latest chromedriver from https://chromedriver.chromium.org/ and copy & paste the new `chromedriver.exe` into same folder as code.
@@ -10,3 +12,4 @@
 
 ## Youtube Video
 https://youtu.be/n8s9DjPDBEw
+
