@@ -1,102 +1,83 @@
 timestamp,text
-00:10,Good afternoon everyone and Welcome to MIT  6.S191 -- Introduction to Deep Learning. My  
-00:17,name is Alexander Amini and I'm so excited to  be your instructor this year along with Ava  
-00:21,Soleimany in this new virtual format. 6.S191 is  a two-week bootcamp on everything deep learning  
-00:28,and we'll cover a ton of material in  only two weeks so I think it's really  
-00:32,important for us to dive right in with  these lectures but before we do that I  
-00:36,do want to motivate exactly why I think  this is such an awesome field to study  
-00:41,and when we taught this class last year I decided  to try introducing the class very differently and  
-00:46,instead of me telling the class how great  6.S191 is I wanted to let someone else do  
-00:53,that instead so actually I want to start this year  by showing you how we introduced 6s191 last year.
-01:00,[Obama] Hi everybody and welcome to MIT  6.S191 the official introductory course on  
-01:10,deep learning taught here at MIT. Deep learning  is revolutionizing so many things from robotics  
-01:20,to medicine and everything in between you'll  learn the fundamentals of this field and how you  
-01:28,"can build some of these incredible algorithms.  In fact, this entire speech and video  "
-01:38,are not real and were created using deep learning  and artificial intelligence and in this class  
-01:47,you'll learn how. It has been an honor to speak  with you today and I hope you enjoy the course.
-01:59,So in case you couldn't tell that was  actually not a real video or audio  
-02:03,and the audio you actually heard was purposely  degraded a bit more to even make it more obvious  
-02:09,that this was not real and avoid some potential  misuse even with the purposely degraded audio  
-02:15,that intro went somewhat viral last year  after the course and we got some really  
-02:20,great and interesting feedback and to be  honest after last year and when we did  
-02:25,when we did this i thought it was going to  be really hard for us to top it this year  
-02:30,but actually i was wrong because the one thing  i love about this field is that it's moving so  
-02:35,incredibly fast that even within the past year  the state of the art has significantly advanced  
-02:41,and the video you saw that we used last year used  deep learning but it was not a particularly easy  
-02:47,video to create it required a full video of obama  speaking and it used this to intelligently stitch  
-02:54,together parts of the scene to make it look and  appear like he was mouthing the words that i said  
-03:00,and to see the behind the scenes here now  you can see the same video with my voice.
-03:05,[Alexander] Hi everybody and welcome to mit 6.S191  
-03:11,the official introductory course on  deep learning taught here at MIT.
-03:18,Now it's actually possible to use just a single  static image not the full video to achieve  
-03:25,the exact same thing and now you can actually  see eight more examples of obama now just  
-03:32,created using just a single static image no more  full dynamic videos but we can achieve the same  
-03:39,incredible realism and result using deep learning  now of course there's nothing restricting us to  
-03:47,one person this method generalizes to different  faces and there's nothing restricting us even  
-03:53,to humans anymore or individuals that  the algorithm has ever seen before
-03:58,[Alexander] Hi everybody and welcome to mit  
-04:04,6.S191 the official introductory course  on deep learning taught here at MIT.
-04:13,The ability to generate these types of  dynamic moving videos from only a single  
-04:19,image is remarkable to me and it's a testament  to the true power of deep learning in this class  
-04:25,you're going to actually not only learn about  the technical basis of this technology but also  
-04:32,some of the very important and very important  ethical and societal implications of this work  
-04:40,as well now I hope this was a really great way  to get you excited about this course and 6.S191  
-04:47,and with that let's get started we can actually  start by taking a step back and asking ourselves  
-04:52,what is deep learning defining deep learning  in the context of intelligence intelligence is  
-04:58,actually the ability to process information such  that it can be used to inform a future decision  
-05:06,now the field of artificial intelligence or AI  is a science that actually focuses on building  
-05:12,algorithms to do exactly this to build algorithms  to process information such that they can inform  
-05:18,future predictions now machine learning you  can think of this as just a subset of AI  
-05:26,that actually focuses on teaching an algorithm to  learn from experiences without being explicitly  
-05:31,programmed now deep learning takes this idea even  further and it's a subset of machine learning that  
-05:37,focuses on using neural networks to automatically  extract useful patterns in raw data and then using  
-05:44,these patterns or features to learn to perform  that task and that's exactly what this class is  
-05:50,about this class is about teaching algorithms  how to learn a task directly from raw data  
-05:57,and we want to provide you with a solid  foundation both technically and practically  
-06:02,for you to understand under the hood how these  algorithms are built and how they can learn
-06:10,so this course is split between technical  lectures as well as project software labs we'll  
-06:16,cover the foundation starting today with neural  networks which are really the building blocks  
-06:21,of everything that we'll see in this  course and this year we also have two  
-06:26,brand new really exciting hot topic lectures  focusing on uncertainty and probabilistic deep  
-06:31,learning as well as algorithmic bias and fairness  finally we'll conclude with some really exciting  
-06:38,guest lectures and student project presentations  as part of a final project competition that all of  
-06:44,you will be eligible to win some really exciting  prizes now a bit of logistics before we dive into  
-06:52,the technical side of the lecture for those of you  taking this course for credit you will have two  
-06:56,options to fulfill your credit requirement the  first option will be to actually work in teams  
-07:03,of or teams of up to four or individually  to develop a cool new deep learning idea  
-07:10,now doing so will make you eligible to win some of  the prizes that you can see on the right hand side  
-07:16,and we realize that in the context of this  class which is only two weeks that's an  
-07:21,extremely short amount of time to come up  with an impressive project or research idea  
-07:25,so we're not going to be judging you on the  novelty of that idea but rather we're not  
-07:30,going to be judging you on the results of that  idea but rather the novelty of the idea your  
-07:35,thinking process and how you how impactful this  idea can be but not on the results themselves  
-07:43,on the last day of class you will actually  give a three-minute presentation to a group  
-07:47,of judges who will then award the winners and the  prizes now again three minutes is extremely short  
-07:54,to actually present your ideas and present your  project but i do believe that there's an art to  
-08:00,presenting and conveying your ideas concisely  and clearly in such a short amount of time  
-08:06,so we will be holding you strictly to that  to that strict deadline the second option  
-08:13,to fulfill your grade requirement is to write a  one-page review on a deep learning paper here the  
-08:19,grade is based more on the clarity of the writing  and the technical communication of the main ideas  
-08:24,this will be due on thursday the last thursday  of the class and you can pick whatever deep  
-08:29,learning paper you would like if you would  like some pointers we have provided some  
-08:34,guide papers that can help you get started if  you would just like to use one of those for  
-08:38,your review in addition to the final project  prizes we'll also be awarding this year three  
-08:46,lab prizes one associated to each of the software  labs that students will complete again completion  
-08:52,of the software labs is not required for grade of  this course but it will make you eligible for some  
-08:58,of these cool prices so please we encourage  everyone to compete for these prizes and  
-09:04,get the opportunity to win them all please  post the piazza if you have any questions  
-09:11,visit the course website for announcements  and digital recordings of the lectures etc  
-09:17,and please email us if you have any  questions also there are software labs  
-09:22,and office hours right after each of these  technical lectures held in gather town so  
-09:28,please drop by in gather town to ask any questions  about the software labs specifically on those or  
-09:33,more generally about past software labs or  about the lecture that occurred that day
-09:40,now this team all this course has a incredible  group of TA's and teaching assistants that  
-09:47,you can reach out to at any time  in case you have any issues or  
-09:50,questions about the material that you're learning
-09:55,and finally we want to give a  huge thanks to all of our sponsors  
-09:59,who without their help this class would  not be possible this is the fourth year  
-10:04,that we're teaching this class and each year it  just keeps getting bigger and bigger and bigger  
-10:09,and we really give a huge shout out to our  sponsors for helping us make this happen each year  
+0:10,Good afternoon everyone and Welcome to MIT  6.S191 -- Introduction to Deep Learning. My  
+0:17,name is Alexander Amini and I'm so excited to  be your instructor this year along with Ava   Soleimany in this new virtual format. 6.S191 is  a two-week bootcamp on everything deep learning  
+0:28,and we'll cover a ton of material in  only two weeks so I think it's really   important for us to dive right in with  these lectures but before we do that I  
+0:36,do want to motivate exactly why I think  this is such an awesome field to study   and when we taught this class last year I decided  to try introducing the class very differently and  
+0:46,instead of me telling the class how great  6.S191 is I wanted to let someone else do  
+0:53,that instead so actually I want to start this year  by showing you how we introduced 6s191 last year.
+1:00,[Obama] Hi everybody and welcome to MIT  6.S191 the official introductory course on  
+1:10,deep learning taught here at MIT. Deep learning  is revolutionizing so many things from robotics  
+1:20,to medicine and everything in between you'll  learn the fundamentals of this field and how you  
+1:28,"can build some of these incredible algorithms.  In fact, this entire speech and video  "
+1:38,are not real and were created using deep learning  and artificial intelligence and in this class  
+1:47,you'll learn how. It has been an honor to speak  with you today and I hope you enjoy the course.
+1:59,So in case you couldn't tell that was  actually not a real video or audio   and the audio you actually heard was purposely  degraded a bit more to even make it more obvious  
+2:09,that this was not real and avoid some potential  misuse even with the purposely degraded audio  
+2:15,that intro went somewhat viral last year  after the course and we got some really   great and interesting feedback and to be  honest after last year and when we did  
+2:25,when we did this i thought it was going to  be really hard for us to top it this year  
+2:30,but actually i was wrong because the one thing  i love about this field is that it's moving so   incredibly fast that even within the past year  the state of the art has significantly advanced  
+2:41,and the video you saw that we used last year used  deep learning but it was not a particularly easy  
+2:47,video to create it required a full video of obama  speaking and it used this to intelligently stitch  
+2:54,together parts of the scene to make it look and  appear like he was mouthing the words that i said  
+3:00,and to see the behind the scenes here now  you can see the same video with my voice. [Alexander] Hi everybody and welcome to mit 6.S191  
+3:11,the official introductory course on  deep learning taught here at MIT.
+3:18,Now it's actually possible to use just a single  static image not the full video to achieve  
+3:25,the exact same thing and now you can actually  see eight more examples of obama now just  
+3:32,created using just a single static image no more  full dynamic videos but we can achieve the same  
+3:39,incredible realism and result using deep learning  now of course there's nothing restricting us to  
+3:47,one person this method generalizes to different  faces and there's nothing restricting us even  
+3:53,to humans anymore or individuals that  the algorithm has ever seen before [Alexander] Hi everybody and welcome to mit  
+4:04,6.S191 the official introductory course  on deep learning taught here at MIT.
+4:13,The ability to generate these types of  dynamic moving videos from only a single  
+4:19,image is remarkable to me and it's a testament  to the true power of deep learning in this class  
+4:25,you're going to actually not only learn about  the technical basis of this technology but also  
+4:32,some of the very important and very important  ethical and societal implications of this work  
+4:40,as well now I hope this was a really great way  to get you excited about this course and 6.S191  
+4:47,and with that let's get started we can actually  start by taking a step back and asking ourselves  
+4:52,what is deep learning defining deep learning  in the context of intelligence intelligence is  
+4:58,actually the ability to process information such  that it can be used to inform a future decision  
+5:06,now the field of artificial intelligence or AI  is a science that actually focuses on building  
+5:12,algorithms to do exactly this to build algorithms  to process information such that they can inform  
+5:18,future predictions now machine learning you  can think of this as just a subset of AI  
+5:26,that actually focuses on teaching an algorithm to  learn from experiences without being explicitly  
+5:31,programmed now deep learning takes this idea even  further and it's a subset of machine learning that  
+5:37,focuses on using neural networks to automatically  extract useful patterns in raw data and then using  
+5:44,these patterns or features to learn to perform  that task and that's exactly what this class is  
+5:50,about this class is about teaching algorithms  how to learn a task directly from raw data  
+5:57,and we want to provide you with a solid  foundation both technically and practically   for you to understand under the hood how these  algorithms are built and how they can learn
+6:10,so this course is split between technical  lectures as well as project software labs we'll  
+6:16,cover the foundation starting today with neural  networks which are really the building blocks  
+6:21,of everything that we'll see in this  course and this year we also have two   brand new really exciting hot topic lectures  focusing on uncertainty and probabilistic deep  
+6:31,learning as well as algorithmic bias and fairness  finally we'll conclude with some really exciting  
+6:38,guest lectures and student project presentations  as part of a final project competition that all of  
+6:44,you will be eligible to win some really exciting  prizes now a bit of logistics before we dive into  
+6:52,the technical side of the lecture for those of you  taking this course for credit you will have two   options to fulfill your credit requirement the  first option will be to actually work in teams  
+7:03,of or teams of up to four or individually  to develop a cool new deep learning idea  
+7:10,now doing so will make you eligible to win some of  the prizes that you can see on the right hand side  
+7:16,and we realize that in the context of this  class which is only two weeks that's an   extremely short amount of time to come up  with an impressive project or research idea  
+7:25,so we're not going to be judging you on the  novelty of that idea but rather we're not  
+7:30,going to be judging you on the results of that  idea but rather the novelty of the idea your   thinking process and how you how impactful this  idea can be but not on the results themselves  
+7:43,on the last day of class you will actually  give a three-minute presentation to a group   of judges who will then award the winners and the  prizes now again three minutes is extremely short  
+7:54,to actually present your ideas and present your  project but i do believe that there's an art to  
+8:00,presenting and conveying your ideas concisely  and clearly in such a short amount of time  
+8:06,so we will be holding you strictly to that  to that strict deadline the second option  
+8:13,to fulfill your grade requirement is to write a  one-page review on a deep learning paper here the  
+8:19,grade is based more on the clarity of the writing  and the technical communication of the main ideas  
+8:24,this will be due on thursday the last thursday  of the class and you can pick whatever deep   learning paper you would like if you would  like some pointers we have provided some  
+8:34,guide papers that can help you get started if  you would just like to use one of those for   your review in addition to the final project  prizes we'll also be awarding this year three  
+8:46,lab prizes one associated to each of the software  labs that students will complete again completion  
+8:52,of the software labs is not required for grade of  this course but it will make you eligible for some  
+8:58,of these cool prices so please we encourage  everyone to compete for these prizes and  
+9:04,get the opportunity to win them all please  post the piazza if you have any questions  
+9:11,visit the course website for announcements  and digital recordings of the lectures etc  
+9:17,and please email us if you have any  questions also there are software labs  
+9:22,and office hours right after each of these  technical lectures held in gather town so  
+9:28,please drop by in gather town to ask any questions  about the software labs specifically on those or  
+9:33,more generally about past software labs or  about the lecture that occurred that day
+9:40,now this team all this course has a incredible  group of TA's and teaching assistants that  
+9:47,you can reach out to at any time  in case you have any issues or   questions about the material that you're learning
+9:55,and finally we want to give a  huge thanks to all of our sponsors   who without their help this class would  not be possible this is the fourth year  
+10:04,that we're teaching this class and each year it  just keeps getting bigger and bigger and bigger   and we really give a huge shout out to our  sponsors for helping us make this happen each year  
 10:15,and especially this year in light of the virtual  format so now let's start with the fun stuff  
 10:21,let's start by asking ourselves a question about  why why do we all care about deep learning and  
 10:27,specifically why do we care right now understand  that it's important to actually understand first  
@@ -118,8 +99,7 @@ timestamp,text
 12:10,parallelizable so they can benefit tremendously  from modern gpu hardware that simply did not exist  
 12:16,when these algorithms were developed and finally  due to open source toolboxes like tensorflow  
 12:23,building and deploying these models  has become extremely streamlined
-12:29,so let's start actually with  the fundamental building block  
-12:33,of deep learning and of every neural network that  is just a single neuron also known as a perceptron  
+12:29,so let's start actually with  the fundamental building block   of deep learning and of every neural network that  is just a single neuron also known as a perceptron  
 12:40,so we're going to walk through exactly what is  a perceptron how it's defined and we're going to  
 12:45,build our way up to deeper neural networks all the  way from there so let's start we're really at the  
 12:51,basic building block the idea of a perceptron  or a single neuron is actually very simple so  
@@ -129,8 +109,7 @@ timestamp,text
 13:16,each of these inputs or each of these numbers  are multiplied by their corresponding weight  
 13:22,and then added together we take this single number  the result of that addition and pass it through  
 13:29,what's called a nonlinear activation function  to produce our final output y we can actually  
-13:39,actually this is not entirely correct because one  thing i forgot to mention is that we also have  
-13:43,what's called a bias term in here which allows  you to shift your activation function left or  
+13:39,actually this is not entirely correct because one  thing i forgot to mention is that we also have   what's called a bias term in here which allows  you to shift your activation function left or  
 13:48,right now on the right hand side of this diagram  you can actually see this concept illustrated or  
 13:55,written out mathematically as a single equation  you can actually rewrite this in terms of linear  
 14:02,algebra matrix multiplications and dot products  to to represent this a bit more concisely  
@@ -153,19 +132,15 @@ timestamp,text
 15:53,neural networks the relu activation function which  you can see on the right is also extremely popular  
 15:59,because of its simplicity in this case it's a  piecewise linear function it is zero before when  
 16:05,it's uh in the negative regime and it is strictly  the identity function in the positive regime
-16:15,but one really important question that i  hope that you're asking yourselves right now  
-16:19,is why do we even need activation functions  and i think actually throughout this course  
+16:15,but one really important question that i  hope that you're asking yourselves right now   is why do we even need activation functions  and i think actually throughout this course  
 16:25,i do want to say that no matter what  i say in the course i hope that always  
-16:31,you're questioning why this is a necessary step  and why do we need each of these steps because  
-16:35,often these are the questions that can lead to  really amazing research breakthroughs so why do  
+16:31,you're questioning why this is a necessary step  and why do we need each of these steps because   often these are the questions that can lead to  really amazing research breakthroughs so why do  
 16:41,we need activation functions now the point of  an activation function is to actually introduce  
 16:46,non-linearities into our network because these are  non-linear functions and it allows us to actually  
 16:52,deal with non-linear data this is extremely  important in real life especially because in  
 16:59,the real world data is almost always non-linear  imagine i told you to separate here the green  
-17:05,points from the red points but all you could  use is a single straight line you might think  
-17:10,this is easy with multiple lines or curved lines  but you can only use a single straight line and  
-17:17,that's what using a neural network with a linear  activation function would be like that makes the  
-17:22,problem really hard because no matter how deep the  neural network is you'll only be able to produce  
+17:05,points from the red points but all you could  use is a single straight line you might think   this is easy with multiple lines or curved lines  but you can only use a single straight line and  
+17:17,that's what using a neural network with a linear  activation function would be like that makes the   problem really hard because no matter how deep the  neural network is you'll only be able to produce  
 17:28,a single line decision boundary and you're  only able to separate your space with one line  
 17:35,now using non-linear activation functions  allows your neural network to approximate  
 17:41,arbitrarily complex functions and that's what  makes neural networks extraordinarily powerful
@@ -179,8 +154,7 @@ timestamp,text
 18:34,so if we want to compute this output it's the  same story as before we take a dot product of x  
 18:39,and w we add our bias and apply our non-linearity  what about what's inside of this nonlinearity g  
 18:47,well this is just a 2d line in fact since it's  just a two dimensional line we can even plot it  
-18:54,in two-dimensional space this is called  the feature space the input space  
-18:58,in this case the feature space and the input  space are equal because we only have one neuron  
+18:54,in two-dimensional space this is called  the feature space the input space   in this case the feature space and the input  space are equal because we only have one neuron  
 19:03,so in this plot let me describe what you're seeing  so on the two axes you're seeing our two inputs so  
 19:10,on one axis is x1 one of the inputs on the other  axis is x2 our other input and we can plot the  
 19:16,line here our decision boundary of this trained  neural network that i gave you as a line in this  
@@ -203,8 +177,7 @@ timestamp,text
 21:13,and for any new input that we obtain for example  an input right here we can see exactly that this  
 21:20,point is going to be having an activation function  less than zero and its output will be less than  
 21:27,0.5 the magnitude of that actually is computed  by plugging it into the perceptron equation so  
-21:33,we can't avoid that but we can immediately get an  answer on the decision boundary depending on which  
-21:38,side of this hyperplane that we lie on when we  plug it in so now that we have an idea of how to  
+21:33,we can't avoid that but we can immediately get an  answer on the decision boundary depending on which   side of this hyperplane that we lie on when we  plug it in so now that we have an idea of how to  
 21:46,build a perceptron let's start by building neural  networks and seeing how they all come together
 21:53,so let's revisit that diagram of the perceptron  that i showed you before if there's only a few  
 21:59,things that you get from this class i really  want everyone to take away how a perceptron works  
@@ -229,12 +202,10 @@ timestamp,text
 24:02,let's try and see how we can actually build up  a dense layer like this all the way from scratch  
 24:09,to do that we can actually start by initializing  the two components of our dense layer  
 24:14,which are the weights and the biases now that we  have these two parameters of our neural network  
-24:20,of our dense layer we can actually define the  forward propagation of information just like  
-24:25,we saw it and learn about already that forward  propagation of information is simply the dot  
+24:20,of our dense layer we can actually define the  forward propagation of information just like   we saw it and learn about already that forward  propagation of information is simply the dot  
 24:31,product or the matrix multiplication of our  inputs with our weights at a bias that gives  
 24:38,us our activation function here and then we  apply this non-linearity to compute the output
-24:48,now tensorflow has actually implemented  this dense layer for us so we don't need  
-24:52,to do that from scratch instead we  can just call it like shown here so  
+24:48,now tensorflow has actually implemented  this dense layer for us so we don't need   to do that from scratch instead we  can just call it like shown here so  
 24:57,to create a dense layer with two outputs  we can specify this units equal to two
 25:03,now let's take a look at what's called a single  layered neural network this is one we have a  
 25:09,single hidden layer between our inputs and our  outputs this layer is called the hidden layer  
@@ -252,10 +223,8 @@ timestamp,text
 26:32,from now on i'll just use this symbol here to  denote what we call this dense layer or fully  
 26:38,connected layers and here you can actually  see an example of how we can create this  
 26:45,exact neural network again using tensorflow  with the predefined dense layer notation  
-26:50,here we're creating a sequential model where  we can stack layers on top of each other  
-26:55,first layer with n neurons and the second  layer with two neurons the output layer
-27:04,and if we want to create a deep neural network  all we have to do is keep stacking these layers  
-27:08,to create more and more hierarchical models  ones where the final output is computed  
+26:50,here we're creating a sequential model where  we can stack layers on top of each other   first layer with n neurons and the second  layer with two neurons the output layer
+27:04,and if we want to create a deep neural network  all we have to do is keep stacking these layers   to create more and more hierarchical models  ones where the final output is computed  
 27:14,by going deeper and deeper into the network and  to implement this in tensorflow again it's very  
 27:22,similar as we saw before again using the tf keras  sequential call we can stack each of these dense  
 27:29,layers on top of each other each one specified  by the number of neurons in that dense layer  
@@ -265,14 +234,11 @@ timestamp,text
 27:56,look at how we can actually apply them to a very  real problem that i believe all of you should  
 28:03,care very deeply about here's a problem that we  want to build an ai system to learn to answer  
 28:11,will i pass this class and we can start with  a simple two feature model one feature let's  
-28:18,say is the number of lectures that you attend as  part of this class and the second feature is the  
-28:22,number of hours that you spend working on your  final project you do have some training data  
+28:18,say is the number of lectures that you attend as  part of this class and the second feature is the   number of hours that you spend working on your  final project you do have some training data  
 28:28,from all of the past participants of success 191  and we can plot this data on this feature space  
 28:35,like this the green points here actually indicate  students so each point is one student that has  
-28:41,passed the class and the red points  are students that have failed the pass  
-28:45,failed the class you can see their where they are  in this feature space depends on the actual number  
-28:51,of hours that they attended the lecture the number  of lectures they attended and the number of hours  
-28:55,they spent on the final project and then there's  you you spent you have attended four lectures  
+28:41,passed the class and the red points  are students that have failed the pass   failed the class you can see their where they are  in this feature space depends on the actual number  
+28:51,of hours that they attended the lecture the number  of lectures they attended and the number of hours   they spent on the final project and then there's  you you spent you have attended four lectures  
 29:03,and you have spent five hours on your  final project and you want to understand  
 29:08,uh will you or how can you build a neural network  given everyone else in this class will you pass  
 29:16,or fail uh this class based on the training data  that you see so let's do it we have now all of the  
@@ -284,8 +250,7 @@ timestamp,text
 30:00,it's basically just a a baby it's never seen any  data even though you have seen the data it hasn't  
 30:07,seen any data and more importantly you haven't  told the model how to interpret this data it needs  
 30:14,to learn about this problem first it knows nothing  about this class or final projects or any of that  
-30:21,so one of the most important things to do  this is actually you have to tell the model  
-30:26,when it's able when it is making bad predictions  in order for it to be able to correct itself  
+30:21,so one of the most important things to do  this is actually you have to tell the model   when it's able when it is making bad predictions  in order for it to be able to correct itself  
 30:32,now the loss of a neural network actually defines  exactly this it defines how wrong a prediction was  
 30:40,so it takes as input the predicted outputs  and the ground truth outputs now if those  
 30:46,two things are very far apart from each other  then the loss will be very large on the other  
@@ -297,8 +262,7 @@ timestamp,text
 31:20,one prediction but how it did on average  across all of these students this is what  
 31:26,we call the empirical loss and it's  simply just the mean or the average  
 31:32,of every loss from each individual  example or each individual student
-31:38,when training a neural network we  want to find a network that minimizes  
-31:42,the empirical loss between our  predictions and the true outputs
+31:38,when training a neural network we  want to find a network that minimizes   the empirical loss between our  predictions and the true outputs
 31:50,now if we look at the problem of binary  classification where the neural network  
 31:55,like we want to do in this case is supposed to  answer either yes or no one or zero we can use  
 32:02,what is called a soft max cross entropy loss now  the soft max cross entropy loss is actually built  
@@ -308,59 +272,46 @@ timestamp,text
 32:28,let's suppose instead of predicting binary  outputs will i pass this class or will i not  
 32:34,pass this class instead you want to predict the  final grade as a real number not a probability  
 32:41,or as a percentage we want the the grade that you  will get in this class now in this case because  
-32:51,the type of the output is different we also need  to use a different loss here because our outputs  
-32:56,are no longer 0 1 but they can be any real number  they're just the grade that you're going to get on  
+32:51,the type of the output is different we also need  to use a different loss here because our outputs   are no longer 0 1 but they can be any real number  they're just the grade that you're going to get on  
 33:03,on the final class so for example here since this  is a continuous variable the grade we want to use  
 33:10,what's called the mean squared error this measures  just the the squared error the squared difference  
 33:17,between our ground truth and our predictions  again averaged over the entire data set  
 33:24,okay great so now we've seen two loss functions  one for classification binary outputs as well as  
 33:32,regression continuous outputs and the problem now  i think that we need to start asking ourselves is  
-33:38,how can we take that loss function we've seen our  loss function we've seen our network now we have  
-33:43,to actually understand how can we put those two  things together how can we use our loss function  
+33:38,how can we take that loss function we've seen our  loss function we've seen our network now we have   to actually understand how can we put those two  things together how can we use our loss function  
 33:48,to train the weights of our neural network  such that it can actually learn that problem  
-33:54,well what we want to do is actually  find the weights of the neural network  
-33:58,that will minimize the loss of our  data set that essentially means  
+33:54,well what we want to do is actually  find the weights of the neural network   that will minimize the loss of our  data set that essentially means  
 34:03,that we want to find the ws in our neural network  that minimize j of w jfw is our empirical cost  
 34:11,function that we saw in the previous slides that  average loss over each data point in the data set
 34:19,now remember that w capital w is simply  a collection of all of the weights in our  
-34:25,neural network not just from one layer  but from every single layer so that's  
-34:29,w0 from the zeroth layer to the first layer  to the second layer all concatenate into one  
+34:25,neural network not just from one layer  but from every single layer so that's   w0 from the zeroth layer to the first layer  to the second layer all concatenate into one  
 34:34,in this optimization problem we want to optimize  all of the w's to minimize this empirical loss
 34:42,now remember our loss function is just a  simple function of our weights if we have  
 34:47,only two weights we can actually plot this entire  lost landscape over this grid of weight so on the  
 34:54,one axis on the bottom you can see weight number  one and the other one you can see weight zero  
-35:01,there's only two weights in this neural network  very simple neural network so we can actually plot  
-35:05,for every w0 and w1 what is the loss what is the  error that we'd expect to see and obtain from this  
+35:01,there's only two weights in this neural network  very simple neural network so we can actually plot   for every w0 and w1 what is the loss what is the  error that we'd expect to see and obtain from this  
 35:14,neural network now the whole process of training a  neural network optimizing it is to find the lowest  
 35:22,point in this lost landscape that will tell us our  optimal w0 and w1 now how can we do that the first  
 35:31,thing we have to do is pick a point so let's pick  any w0 w1 starting from this point we can compute  
 35:40,the gradient of the landscape at that point  now the gradient tells us the direction of  
-35:48,highest or steepest ascent okay  so that tells us which way is up  
-35:53,okay if we compute the gradient of our  loss with respect to our weights that's  
-35:57,the derivative our gradient for the loss  with respect to the weights that tells  
-36:00,us the direction of which way is up on that  lost landscape from where we stand right now  
+35:48,highest or steepest ascent okay  so that tells us which way is up   okay if we compute the gradient of our  loss with respect to our weights that's  
+35:57,the derivative our gradient for the loss  with respect to the weights that tells   us the direction of which way is up on that  lost landscape from where we stand right now  
 36:07,instead of going up though we want to find the  lowest loss so let's take the the negative of our  
 36:13,gradient and take a small step in that direction  okay and this will move us a little bit closer  
-36:20,to the lowest point and we just keep repeating  this now we compute the gradient at this point  
-36:24,and repeat the process until we converge  and we will converge to a local minimum  
-36:31,we don't know if it will converge to a global  minimum but at least we know that it should  
-36:35,in theory converge to a local minimum now we can  summarize this algorithm as follows this algorithm  
+36:20,to the lowest point and we just keep repeating  this now we compute the gradient at this point   and repeat the process until we converge  and we will converge to a local minimum  
+36:31,we don't know if it will converge to a global  minimum but at least we know that it should   in theory converge to a local minimum now we can  summarize this algorithm as follows this algorithm  
 36:42,is also known as gradient descent so we start by  initializing all of our weights randomly and we  
 36:49,start and we loop until convergence we start  from one of those weights our initial point  
 36:55,we compute the gradient that tells us which way is  up so we take a step in the opposite direction we  
 37:01,take a small step here small is computed by  multiplying our gradient by this factor eta  
-37:09,and we'll learn more about this factor later  this factor is called the learning rate  
-37:13,we'll learn more about that later now again in  tensorflow we can actually see this pseudocode  
+37:09,and we'll learn more about this factor later  this factor is called the learning rate   we'll learn more about that later now again in  tensorflow we can actually see this pseudocode  
 37:20,of grading descent algorithm written out in  code we can randomize all of our weights that  
 37:25,in that basically initializes our search our  optimization process at some point in space  
-37:31,and then we keep looping over and over and over  again and we compute the loss we compute the  
-37:34,gradient and we take a small step of our weights  in the direction of that gradient but now let's  
+37:31,and then we keep looping over and over and over  again and we compute the loss we compute the   gradient and we take a small step of our weights  in the direction of that gradient but now let's  
 37:41,take a look at this term here this is the how  we actually compute the gradient this explains  
 37:49,how the loss is changing with respect to  the weight but i never actually told you  
-37:55,how we compute this so let's  talk about this process  
-37:58,which is actually extremely important in training  neural networks it's known as backpropagation
-38:06,so how does backpropagation work  how do we compute this gradient  
-38:10,let's start with a very simple neural network  this is probably the simplest neural network  
+37:55,how we compute this so let's  talk about this process   which is actually extremely important in training  neural networks it's known as backpropagation
+38:06,so how does backpropagation work  how do we compute this gradient   let's start with a very simple neural network  this is probably the simplest neural network  
 38:14,in existence it only has one input one hidden  neuron and one output computing the gradient of  
 38:22,our loss j of w with respect to one of the weights  in this case just w2 for example tells us how much  
 38:32,a small change in w2 is going to affect our loss  j so if we move around j infinitesimally small how  
@@ -380,8 +331,7 @@ timestamp,text
 40:20,our loss so we can see if we increase our weight a  small amount it will increase our loss that means  
 40:25,we will want to decrease the weight to decrease  our loss that's what the gradient tells us which  
 40:30,direction we need to step in order to decrease  or increase our loss function now we showed this  
-40:39,here for just two weights in our neural network  because we only have two weights but imagine  
-40:42,we have a very deep neural network one with more  than just two layers of or one layer rather of of  
+40:39,here for just two weights in our neural network  because we only have two weights but imagine   we have a very deep neural network one with more  than just two layers of or one layer rather of of  
 40:49,hidden units we can just repeat this this process  of applying recursively applying the chain rule  
 40:56,to determine how every single way in the model  needs to change to impact that loss but really  
 41:02,all this boils down to just recursively applying  this chain rule formulation that you can see here
@@ -403,10 +353,8 @@ timestamp,text
 42:52,learning rate multiplied by the gradient so we  have this minus sign because we want to step in  
 42:57,the opposite direction and we multiply it by the  gradient or we multiply by the small number called  
 43:03,here called eta which is what we call the learning  rate how fast do we want to do the learning  
-43:10,now it determines actually not just how fast  to do the learning that's maybe not the best  
-43:15,way to say it but it tells us how large should  each step we take in practice be with regards  
-43:22,to that gradient so the gradient tells us the  direction but it doesn't necessarily tell us  
-43:27,the magnitude of the direction so eta can tell  us actually a scale of how much we want to trust  
+43:10,now it determines actually not just how fast  to do the learning that's maybe not the best   way to say it but it tells us how large should  each step we take in practice be with regards  
+43:22,to that gradient so the gradient tells us the  direction but it doesn't necessarily tell us   the magnitude of the direction so eta can tell  us actually a scale of how much we want to trust  
 43:34,that gradient and step in the direction of that  gradient in practice setting even eta this one  
 43:40,parameters one number can be extremely difficult  and i want to give you a quick example of why  
 43:46,so if you have a very non-convex loc or lost  landscape where you have local minima if you  
@@ -419,29 +367,24 @@ timestamp,text
 44:34,minima but small enough so that they don't  diverge and convert or that they don't diverge  
 44:41,completely so they're small enough to actually  converge to that global spot once they reach it
 44:49,so how can we actually set this learning  rate well one option which is actually  
-44:54,somewhat popular in practice is to actually  just try a lot of different learning rates  
-44:59,and that actually works it is a feasible approach  but let's see if we can do something a little bit  
+44:54,somewhat popular in practice is to actually  just try a lot of different learning rates   and that actually works it is a feasible approach  but let's see if we can do something a little bit  
 45:05,smarter than that more intelligent what if we  could say instead how can we build an adaptive  
 45:12,learning rate that actually looks at its lost  landscape and adapts itself to account for what  
 45:17,it sees in the landscape there are actually  many types of optimizers that do exactly this  
 45:23,this means that the learning rates are no longer  fixed they can increase or decrease depending on  
 45:29,how large the gradient is in that location and how  fast we want and how fast we're actually learning
-45:38,and many other options that could be also with  regards to the size of the weights at that point  
-45:42,the magnitudes etc in fact these have been widely  explored and published as part of tensorflow as  
-45:51,well and during your labs we encourage each of  you to really try out each of these different  
-45:56,types of optimizers and experiment with  their performance in different types of  
+45:38,and many other options that could be also with  regards to the size of the weights at that point   the magnitudes etc in fact these have been widely  explored and published as part of tensorflow as  
+45:51,well and during your labs we encourage each of  you to really try out each of these different   types of optimizers and experiment with  their performance in different types of  
 46:01,problems so that you can gain very important  intuition about when to use different types of  
 46:06,optimizers are what their advantages are and  disadvantages in certain applications as well  
 46:14,so let's try and put all of this together so  here we can see a full loop of using tensorflow  
 46:22,to define your model on the first line define  your optimizer here you can replace this with  
 46:28,any optimizer that you want here i'm just using  stochastic gradient descent like we saw before  
-46:34,and feeding it through the model we loop  forever we're doing this forward prediction  
-46:39,we predict using our model we compute the  loss with our prediction this is exactly  
+46:34,and feeding it through the model we loop  forever we're doing this forward prediction   we predict using our model we compute the  loss with our prediction this is exactly  
 46:44,the loss is telling us again how incorrect our  prediction is with respect to the ground truth y  
 46:51,we compute the gradient of our loss with respect  to each of the weights in our neural network and  
 46:58,finally we apply those gradients using our  optimizer to step and update our weights  
-47:05,this is really taking everything that we've  learned in the class in the lecture so far  
-47:10,and applying it into one one whole  piece of code written in tensorflow  
+47:05,this is really taking everything that we've  learned in the class in the lecture so far   and applying it into one one whole  piece of code written in tensorflow  
 47:18,so i want to continue this talk and really talk  about tips for training these networks in practice  
 47:25,now that we can focus on this very powerful  idea of batching your data into mini batches  
 47:33,so before we saw it with gradient descent that  we have the following algorithm this gradient  
@@ -449,8 +392,7 @@ timestamp,text
 47:46,if it's computed over your entire training set so  this is a summation over every single data point  
 47:52,in the entire data set in most real-life  applications it is simply not feasible to  
 47:58,compute this on every single iteration in  your optimization loop alternatively let's  
-48:04,consider a different variant of this algorithm  called stochastic gradient descent so instead  
-48:09,of computing the gradient over our entire data  set let's just pick a single point compute the  
+48:04,consider a different variant of this algorithm  called stochastic gradient descent so instead   of computing the gradient over our entire data  set let's just pick a single point compute the  
 48:15,gradient of that single point with respect to the  weights and then update all of our weights based  
 48:21,on that gradient so this has some advantages this  is very easy to compute because it's only using  
 48:28,one data point now it's very fast but it's also  very noisy because it's only from one data point  
@@ -471,18 +413,14 @@ timestamp,text
 50:11,this is a clear concept in everyone's mind ideally  in machine learning we want to learn a model  
 50:18,that accurately describes our test data not the  training data even though we're optimizing this  
 50:24,model based on the training data what we really  want is for it to perform well on the test data  
-50:31,so said differently we want  to build representations  
-50:34,that can learn from our training data but  still generalize well to unseen test data  
+50:31,so said differently we want  to build representations   that can learn from our training data but  still generalize well to unseen test data  
 50:42,now assume you want to build a line to describe  these points underfitting means that the model  
 50:49,does simply not have enough capacity to  represent these points so no matter how good  
 50:55,we try to fit this model it simply does not  have the capacity to represent this type of data  
-51:01,on the far right hand side we can see the  extreme other extreme where here the model  
-51:05,is too complex it has too many parameters  and it does not generalize well to new data  
-51:12,in the middle though we can see what's called  the ideal fit it's not overfitting it's not  
-51:16,underfitting but it has a medium number of  parameters and it's able to fit in a generalizable  
+51:01,on the far right hand side we can see the  extreme other extreme where here the model   is too complex it has too many parameters  and it does not generalize well to new data  
+51:12,in the middle though we can see what's called  the ideal fit it's not overfitting it's not   underfitting but it has a medium number of  parameters and it's able to fit in a generalizable  
 51:23,way to the output and is able to generalize well  to brand new data when it sees it at test time  
-51:31,now to address this problem let's talk about  
-51:34,regularization how can we make sure that our  models do not end up over fit because neural  
+51:31,now to address this problem let's talk about   regularization how can we make sure that our  models do not end up over fit because neural  
 51:40,networks do have a ton of parameters how  can we enforce some form of regularization  
 51:46,to them now what is regularization regularization  is a technique that constrains our optimization  
 51:52,problems such that we can discourage these complex  models from actually being learned and overfit  
@@ -501,8 +439,7 @@ timestamp,text
 53:19,of the weights and only 50 of the gradients so  that also cuts our uh gradient computation time  
 53:25,down in by a factor of two so because now  we only have to compute half the number of  
 53:30,neuron gradients now on every iteration we dropped  out on the previous iteration fifty percent of  
-53:37,neurons but on the next iteration we're going  to drop out a different set of fifty 50 of the  
-53:42,neurons a different set of neurons and this gives  the network it basically forces the network to  
+53:37,neurons but on the next iteration we're going  to drop out a different set of fifty 50 of the   neurons a different set of neurons and this gives  the network it basically forces the network to  
 53:49,learn how to take different pathways to get to its  answer and it can't rely on any one pathway too  
 53:55,strongly and overfit to that pathway this is a way  to really force it to generalize to this new data  
 54:02,the second regularization technique that  we'll talk about is this notion of early  
@@ -514,20 +451,15 @@ timestamp,text
 54:40,before it has a chance to overfit so on the x-axis  you can see the number of training iterations and  
 54:45,on the y-axis you can see the loss that we  get after training that number of iterations  
 54:51,so as we continue to train in the beginning both  lines continue to decrease this is as we'd expect  
-54:56,and this is excellent since it  means our model is getting stronger  
-55:00,eventually though the network's testing  loss plateaus and starts to increase  
-55:06,note that the training accuracy will always  continue to go to go down as long as the  
-55:10,network has the capacity to memorize the data and  this pattern continues for the rest of training  
+54:56,and this is excellent since it  means our model is getting stronger   eventually though the network's testing  loss plateaus and starts to increase  
+55:06,note that the training accuracy will always  continue to go to go down as long as the   network has the capacity to memorize the data and  this pattern continues for the rest of training  
 55:17,so it's important here to actually focus on this  point here this is the point where we need to stop  
-55:22,training and after this point assuming  that our test set is a valid representation  
-55:27,of the true test set the accuracy of the model  will only get worse so we can stop training here  
+55:22,training and after this point assuming  that our test set is a valid representation   of the true test set the accuracy of the model  will only get worse so we can stop training here  
 55:32,take this model and this should be the model that  we actually use when we deploy into the real world  
-55:40,anything any model taken from the left hand  side is going to be underfit it's not going  
-55:44,to be utilizing the full capacity of the  network and anything taken from the right  
+55:40,anything any model taken from the left hand  side is going to be underfit it's not going   to be utilizing the full capacity of the  network and anything taken from the right  
 55:48,hand side is over fit and actually performing  worse than it needs to on that held out test set
 55:56,so i'll conclude this lecture by summarizing  three key points that we've covered so far  
-56:02,we started about the fundamental building  blocks of neural networks the perceptron  
-56:07,we learned about stacking and composing  these perceptrons together to form complex  
+56:02,we started about the fundamental building  blocks of neural networks the perceptron   we learned about stacking and composing  these perceptrons together to form complex  
 56:12,hierarchical neural networks and how to  mathematically optimize these models with  
 56:17,back propagation and finally we address the  practical side of these models that you'll find  
 56:22,useful for the labs today including adaptive  learning rates batching and regularization  
